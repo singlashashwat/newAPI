@@ -1,0 +1,198 @@
+@import '../../stylesheets/mixins';
+
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 2rem !important;
+// background: linear-gradient(0deg, #d9cfe0, #e7e1ee, #d9cfe0);
+}
+
+
+
+.outcard{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding-top: 95px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  @include media(lg) {
+    margin-left: 0px;
+  margin-right: 0px;
+  }
+
+  @include media(md) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  // @include media(xs) {
+  //   width: 90%;
+  //   align-self: center;
+  //   margin: auto;
+  // }
+  
+}
+
+.container1{
+  box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 0;
+  width: 400px;
+  height: 500px;
+  margin-top: 10px;
+  color: black;
+  align-items: center;
+
+  @include media(lg) {
+    margin-left: 10px;
+  }
+
+  @include media(md) {
+    margin-left: 10px;
+    height: 550px;
+  }
+  @include media(xs) {
+    // margin-left: 10px;
+    width: 90%;
+    height: 550px;
+  //   align-self: center;
+  //   margin: auto;
+  }
+
+}
+
+.titleLogo{
+  background-color: #bdbdbd;
+  color: #fafafa;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.auth{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.titleAuthor{
+  color:rgba(0, 0, 0, 0.87);
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+.date{
+  font-size: 1.2rem;
+  margin-left: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.pagiheight{
+  height: 40px;
+}
+.imgCont {
+  max-height: 250px;
+  width: 100%;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+  width:100%
+}
+
+.pagination>li {
+  display: inline;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination>li>a, .pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  z-index: 2;
+  color: #fff;
+  cursor: pointer;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.pagination>li>a, .pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.title1{
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 2rem;
+}
+
+.des{
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.3rem;
+  display: -webkit-box;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; 
+  @include media(md) {
+    -webkit-line-clamp: 6;
+  }
+  @include media(xs) {
+    -webkit-line-clamp: 5;
+  }
+}
+
+.pagination > li {
+  cursor: pointer;
+}
+
+a, a:focus, span {
+  text-decoration: none !important;
+}
+.pagCont {
+  display: flex;
+  justify-content: center;
+}
+
+.pagCont>ul>li>a{
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+
+  @include media(xs) {
+    padding: 2px 2px;
+  }
+}

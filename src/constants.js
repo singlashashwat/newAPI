@@ -1,20 +1,15 @@
 /* common */
 export const C = {
-  // OOD_PORTAL_AUTH_DATA: 'oneoneday:portalAuthData',
-  // signupOption: {
-  //   signup: 'signup',
-  //   resend: 'resend',
-  //   verify: 'verify',
-  // },
 }
 
 
 export const URL = {
+  URL_NEWS : 'https://newsapi.org/v2/everything'
 }
 
 /* route path */
 export const RP = {
-  FIRST: '/first',
+  FIRST: '/',
   
   // PRIVATE: '/private',
 }

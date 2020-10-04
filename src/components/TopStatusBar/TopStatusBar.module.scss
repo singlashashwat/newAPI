@@ -1,0 +1,118 @@
+@import '../../stylesheets/mixins';
+
+.topBar {
+  // width: 100%;
+  min-height: 5.6rem;
+  background-color: #3c3b63;
+  // position: absolute;
+  display: flex;
+  align-items: center;
+  // padding-left: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
+  position: fixed;
+    width: 100%;
+    z-index: 1;
+  // overflow: auto;
+
+  @include media(lg) {
+    padding-left: 0px;
+  }
+
+  @include media(md) {
+    padding-left: 0px;
+  }
+
+}
+
+.topBartitle{
+  margin-left: 70px;
+  @include media(lg) {
+    margin-left: 10 px;
+  }
+  // @include media(lg) {
+  //   margin-left: 10 px;
+  // }
+
+  @include media(md) {
+    margin-left: 75px;
+  }
+  @include media(sm) {
+    margin-left: 30px;
+  }
+}
+
+.searchbar{
+margin-left: 40%;
+}
+
+.usNews {
+  color: #fff;
+  // padding-left: 50px;
+} 
+.input1{
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  padding: 0 .25rem!important;
+  margin-bottom: 0!important;
+  display: block;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color:#4f4e72;
+  background-clip: padding-box;
+  border: 1px solid #4f4e72;
+  border-radius: 0 .25rem .25rem 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; 
+}
+.input1:focus {
+  border: 1px solid #4f4e72;
+}
+.inputgrouptext {
+  display: flex;
+  align-items: center;
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #4f4e72;
+  border-radius: .25rem;
+}
+
+.pagination>li>a,.pagination>li>span{
+  @include media(sm) {
+    padding: 2px 2px;
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+}
+.searchDiv {
+  width: 15%;
+  margin-left: 70%;
+  @include media(lg) {
+    margin-left: 66%;
+  }
+
+  @include media(md) {
+    margin-left: 56%;
+    width: 25%;
+  }
+  @include media(sm) {
+    margin-left: 37%;
+    width: 35%;
+  }
+}

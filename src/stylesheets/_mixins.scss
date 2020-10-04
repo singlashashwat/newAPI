@@ -1,0 +1,69 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin font-bold {
+  font-family: 'Mark Offc For MC Bold', 'Open Sans', sans-serif;
+}
+
+@mixin font-regular {
+  font-family: 'Mark Offc For MC Regular', 'Open Sans', sans-serif;
+}
+
+@mixin font-light {
+  font-family: 'Mark Offc For MC Light', 'Open Sans', sans-serif;
+}
+
+@mixin lgLabel {
+  font-size: 3rem;
+}
+
+@mixin smLabel {
+  font-size: 2.5rem;
+}
+
+//Media query; Desktop first
+
+// Extra small devices (portrait phones, less than 576px)
+// Small devices (landscape phones, less than 768px)
+// Medium devices (tablets, less than 992px)
+// Large devices (desktops, less than 1200px)
+@mixin media($breakpoint) {
+  @if $breakpoint == xxs {
+    @media (max-width: 350px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xs {
+    @media (max-width: 575.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == sm {
+    @media (max-width: 768.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media (max-width: 1025.98px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media (max-width: 1300.98px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xlg {
+    @media (max-width: 1800.98px) {
+      @content;
+    }
+  }
+}
