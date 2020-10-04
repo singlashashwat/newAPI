@@ -1,11 +1,11 @@
-To run the game 
+To run the project 
 
 In the project directory 
 
-```Yarn``` 
+```npm i``` 
 
-```Npm start ```
+```npm start ```
 
-Go to ```localhost:3000/First```  
+Go to ```localhost:3000```  
 
 You will see the output 
